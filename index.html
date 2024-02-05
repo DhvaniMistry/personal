@@ -1,68 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Your Portfolio</title>
     <style>
-        .container {
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 40px;
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        .project {
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        padding: 20px;
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1em;
+            text-align: center;
         }
-        </style>
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #007bff;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        h3 {
+            font-size: 1.2em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #007bff;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
+
     <header>
-        <nav>
-            <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            </ul>
-            </nav>
+        <h1>Your Full Name</h1>
+        <p>Portfolio</p>
     </header>
-    <section id="about">
-        <div class="container">
-            <img src= "./profile.jpeg" alt="Profile Photo" height = "150%" width = "120 %">
-            <p style="font-family: 'Courier New', Courier, monospace; color: brown">CS Student</p>
-            <h1>Dhvani Mistry</h1>
-            <p>Computer Science Student</p>
-            <p>I am student at Iowa State university, majoring in Computer Science, currently a sophomore. 
-            I am an international student from India. </p>
-            <p>While I have worked with html and CSS before, I do not have any personal projects. However, during my time at ISU I have completed many object oriented programming projects.</p>
-            </div>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>Iowa State University</strong></p>
+        <p>Anticipated: May 2026</p>
+        <p>Bachelor of Science, Computer Science (GPA: 3.30)</p>
+        <p>Ames, Iowa</p>
     </section>
-    <section id="projects">
-        <div class = "container">
-            <h1>Projects</h1>
-            <img src = "./project.png" alt = "CSS & HTML icon" height = "10%" width= "15%">
-            <h3>Project 1</h3>
-            <p> Developed Java simulation software for an ISP, implementing cell update rules, grid population, and profit utilization calculations while ensuring code quality and testing rigor.
-            </p>
-            <h3>Project 2</h3>
-            <p>Developed a ConnectGame class in Java with features including random tile generation, grid setup, tile adjacency checks, and tile selection logic, all with callback support for game events (2048 Game).
-            </p>
-            <h3>Project 3</h3>
-            <p>Created a text-based adventure game in Python where the player explores a dungeon, engages in combat, collects gold, and aims to become the King/Queen of Coalfell (Dungeons and Dragons).
-            </p>
-        </div>
+
+    <section id="coursework">
+        <h2>Coursework</h2>
+        <ul>
+            <li>Programming Introduction: Python</li>
+            <li>Object-Oriented Programming</li>
+            <li>Data Structures and Discrete Computational Structures</li>
+            <li>Database Management</li>
+            <li>User Interface</li>
+            <li>Design and Analysis of Algorithms</li>
+        </ul>
     </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p><strong>ISU, Agronomy's IT Department</strong></p>
+        <p>Feb 2023 – Present</p>
+        <p>Student Support Technician, Ames, Iowa</p>
+        <ul>
+            <li>Diagnosed system errors and troubleshot technical issues.</li>
+            <li>Resolved printer-related problems.</li>
+            <li>Installed, configured, and maintained hardware and software components.</li>
+            <li>Created detailed reports documenting customer support incidents and resolutions.</li>
+            <li>Proficient in ServiceNow for IT service management.</li>
+            <li>Experienced in managing user accounts and system configurations within Active Directory and Jamf.</li>
+        </ul>
+    </section>
+
+    <!-- Add other sections for projects, leadership, skills, etc. -->
+
     <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>You can reach me at dhvanimm@iastate.edu</p>
-            </div>
+        <h2>Contact Information</h2>
+        <ul>
+            <li>Email: <a href="mailto:YourEmail@example.com">YourEmail@example.com</a></li>
+            <li>LinkedIn: <a href="[Your LinkedIn Profile]" target="_blank">Your LinkedIn Profile</a></li>
+            <li>GitHub: <a href="[Your GitHub Profile]" target="_blank">Your GitHub Profile</a></li>
+        </ul>
     </section>
+
     <footer>
-        <p>&copy; 2024 Dhvani Mistry</p>
+        &copy; 2024 Your Full Name
     </footer>
-    </body>
-    
+
+</body>
+
 </html>
