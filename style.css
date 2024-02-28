@@ -1,74 +1,128 @@
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+@font-face {
+    font-family: 'Cormorant'; /*a name to be used later*/
+    src: url('/fonts/Cormorant-VariableFont_wght.ttf'); /*URL to font*/
+}
+
+#Profile {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    margin-right: 20px;
+    max-width: 16rem;
+    height: auto;
+}
+
+p {
+    font-family: Cormorant;
+    /* max-width: 600px; Adjust as needed */
+}
+
+@media only screen and (max-width: 600px) {
+    #Profile {
+        flex-direction: column;
+        text-align: center;
     }
-body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
 
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 1em;
-            text-align: center;
-        }
+    img {
+        margin-bottom: 10px; /* Adjust as needed */
+    }
+}
+    body {
+        font-family:'Cormorant';
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
 
-        section {
-            max-width: 800px;
-            margin: 2em auto;
-            padding: 1em;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+    header {
+        background-color: #518355;
+        color: white;
+        padding: 1em;
+        text-align: center;
+        position: relative;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+}
 
-        h1,
-        h2,
-        h3 {
-            color: #007bff;
-        }
+    section {
+        width: 100% auto;
+        margin: 2em auto;
+        padding: 1em;
+        padding-left: 1cm;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding-left: 2em;
+        padding-right: 2em;
+    }
 
-        h1 {
-            font-size: 2em;
-        }
 
-        h2 {
-            font-size: 1.5em;
-        }
+    
+    h1 {
+        color: #dcf2db;
+        font-family: monospace;
+    }
 
-        h3 {
-            font-size: 1.2em;
-        }
+    H2{
+        color: #518355
+    }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
+    ul {
+        list-style-type: circle;
+        padding: 0;
+    }
 
-        li {
-            margin-bottom: 0.5em;
-        }
+    li {
+        margin-bottom: 0.5em;
+    }
 
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
+    a:hover {
+        text-decoration: underline;
+    }
 
-        footer {
-            text-align: center;
-            padding: 1em;
-            background-color: #007bff;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+    footer {
+        text-align: center;
+        padding: 1em;
+        background-color: #518355;
+        color: #dcf2db;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    p{
+        text-align: justify;
+    }
 
+    nav{
+        width: 100%;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    nav li {
+        margin: 0 20px;
+            }
+    nav a {
+        text-decoration: none;
+        color:#dcf2db;
+        }
+  
+    .fade-in {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        }
+  .fade-in.visible {
+        opacity: 1;
+        } 
