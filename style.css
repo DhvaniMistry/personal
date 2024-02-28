@@ -16,7 +16,6 @@ img {
 
 p {
     font-family: Cormorant;
-    /* max-width: 600px; Adjust as needed */
 }
 
 @media only screen and (max-width: 600px) {
@@ -26,7 +25,7 @@ p {
     }
 
     img {
-        margin-bottom: 10px; /* Adjust as needed */
+        margin-bottom: 10px; 
     }
 }
     body {
@@ -40,27 +39,23 @@ p {
     header {
         background-color: #518355;
         color: white;
-        padding: 1em;
+        padding: 2em;
         text-align: center;
         position: relative;
         top: 0;
         width: 100%;
-        z-index: 1000;
+        z-index: 100;
 }
 
     section {
-        width: 100% auto;
         margin: 2em auto;
         padding: 1em;
-        padding-left: 1cm;
         background-color: white;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         padding-left: 2em;
         padding-right: 2em;
     }
 
-
-    
     h1 {
         color: #dcf2db;
         font-family: monospace;
@@ -68,24 +63,6 @@ p {
 
     H2{
         color: #518355
-    }
-
-    ul {
-        list-style-type: circle;
-        padding: 0;
-    }
-
-    li {
-        margin-bottom: 0.5em;
-    }
-
-    a {
-        color: #007bff;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
     }
 
     footer {
@@ -107,17 +84,22 @@ p {
     }
 
     nav ul {
-        list-style: none;
         display: flex;
-        justify-content: center;
-    }
-    nav li {
-        margin: 0 20px;
-            }
+        gap: 3px; /* Adjust the gap as needed */
+        justify-content: center; /* Align items at the center horizontally */
+        list-style: none;
+        color: #dcf2db;
+        }
+          
     nav a {
         text-decoration: none;
-        color:#dcf2db;
+        color: #dcf2db;
+        padding: 5px;
         }
+          
+    nav a:hover {
+        background-color: #555;}
+          
   
     .fade-in {
         opacity: 0;
