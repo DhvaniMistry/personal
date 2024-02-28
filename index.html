@@ -5,170 +5,232 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <style>
-        body {
-            font-family:'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+    <link href="style.css" rel="stylesheet">
 
-        header {
-            background-color: #518355;
-            color: white;
-            padding: 1em;
-            text-align: center;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 2em auto;
-            padding: 1em;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding-left: 2em;
-            padding-right: 2em;
-        }
-
-   
-        
-        h1 {
-            color: #dcf2db;
-            font-family: monospace;
-        }
-
-        H2{
-            color: #518355
-        }
-
-        ul {
-            list-style-type: circle;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 0.5em;
-        }
-
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1em;
-            background-color: #518355;
-            color: #dcf2db;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .left {
-            float: left;
-        }
-
-        .right {
-            float: right;
-        }
-
-        p{
-            text-align: justify;
-        }
-    </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>𝙳𝙷𝚅𝙰𝙽𝙸 𝙼𝙸𝚃𝙷𝚄𝙽𝙺𝚄𝙼𝙰𝚁 𝙼𝙸𝚂𝚃𝚁𝚈</h1>
-    </header>
-    <section id =" Profile" style = "border-top: 4em; border-bottom: 4em;">
-        <img src = "./profile.jpg" height = "30%" width = "20%" alt="Profile Photo" style=" text-align: right">
-       <div class = "right"></div>
+<header style="width: 100%;">
+    <h1>𝙳𝙷𝚅𝙰𝙽𝙸 𝙼𝙸𝚃𝙷𝚄𝙽𝙺𝚄𝙼𝙰𝚁 𝙼𝙸𝚂𝚃𝚁𝚈</h1>
+    <nav>
+        <ul style="list-style: none; color: #dcf2db;">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        </ul>
+        </nav>
+</header>
+   
+<section id="Profile">
+    <img src="./profile.jpg" alt="Profile Photo">
+    <p>
+        Hello, I'm Dhvani Mistry, a passionate computer science sophomore at Iowa State University. As an aspiring developer, I find joy in crafting digital experiences that not only function seamlessly but also captivate users. My journey in the realm of technology has been marked by a fascination with both frontend and backend development, and I am on a quest to sharpen my skills and embrace the challenges that come with full-stack development.
+
+        With a solid foundation in computer science and a keen eye for design, I strive to bring creativity and efficiency to every project I undertake. From Java simulations to Python-based games and web development using HTML, CSS, and JavaScript, I enjoy exploring diverse domains within the vast landscape of software engineering.
+
+        My academic journey has equipped me with a range of skills, from mastering data structures and algorithms to delving into user interface design and database management. Beyond the classroom, my experiences as a Teaching Assistant and a Student Support Technician have further enriched my understanding of technology's practical applications and its impact on education and user support.
+
+        In this portfolio, I invite you to explore my projects, coursework, and professional experiences. Each line of code and every project represents a step forward in my continuous learning journey. Let's connect and explore the boundless possibilities of technology together!
+
+        Thank you for visiting.
+    </p>
+</section>
+
+
+    <section id="education" class="fade-in">
+        <h2>Education</h2>
+        <p><H3>Iowa State University</H3></p>
+            B.S. Computer Science(GPA: 3.30)
+        <br>Anticipated: May 2026
+        <br>Ames, Iowa
+
+    </section>
+
+    <section id="coursework" style="background-color: #f9f9f9; padding: 20px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <h2 >Coursework Taken</h2>
+        <ul style="padding-left: 1cm;">
+            <li >Programming Introduction: Python COM S 127</li>
+            <li >Object-oriented Programming: COM S 227</li>
+            <li>Data Structures: COM S 230</li>
+            <li >Discrete Computational Structures: COM S 228</li>
+            <li >Design and Analysis of Algorithms: COM S 311</li>
+            <li >User Interface: COM S 319</li>
+            <li >Database Management: COM S 363</li>
+        </ul>
+    </section>
+    
+
+    <section id="projects" class="fade-in"> 
+        <h2 style="font-family: Cormorant;" >Projects</h2>
+        <section> 
+            <h2 style="font-family: Cormorant;" >Java</h2>
+            <p style="font-family: Cormorant;">
+                <ol style="font-family: Cormorant;">
+                    <li>
+                        Java simulation software for an ISP, implementing cell update rules, grid population,
+                        and profit utilization calculations while ensuring code quality and testing rigor.
+                    </li>
+                    <li>
+                        Developed a Java program to find the median coordinate point from a set of 2D integer points,
+                        implementing four sorting algorithms (selection sort, insertion sort, merge sort,
+                        and quicksort) and handling duplicates, with a focus on efficiency and correctness.
+                    </li>
+                    <li>
+                        Developed a ConnectGame class in Java with features including random tile generation,
+                        grid setup, tile adjacency checks, and tile selection logic, all with callback support for game events (2048 Game).
+                    </li>
+                    <li>
+                        Designed and implemented a Java-based train track simulation system, showcasing my expertise in object-oriented programming,
+                        simulation development, and effective track management.
+                    </li>
+                </ol>
+            </p>
+            
+        </section>
+        <section>
+            <h2 style="font-family: Cormorant;">Python</h2>
+            <ol style="font-family: Cormorant;">
+                <li>
+                    Created a text-based adventure game in Python where the player explores a dungeon, engages in combat, collects gold, and aims to become the King/Queen of Coalfell (Dungeons and Dragons).
+                    <ul>
+                        <li>Developed a combat function with randomly generated outcomes to determine the decline in the player's health.</li>
+                    </ul>
+                </li>
+                <li>
+                    Created a series of Python games, including:
+                    <ul>
+                        <li>Classic Nim: Showcasing algorithmic thinking and developing an intelligent computer opponent.</li>
+                        <li>Graphical Tic Tac Toe: With a challenging game mode.</li>
+                        <li>ToDo List: Takes input from users and specifies the location where the input should be stored (e.g., completed tasks, in progress).</li>
+                    </ul>
+                </li>
+                <li>
+                    Designed and implemented a classic Battleship game, focusing on clear rules, engaging mechanics, and player interactions with robust game logic and data structures for ship placement, attack validation, and win conditions.
+                </li>
+            </ol>
+        </section>
+        
+        <section>
+            <h2 style="font-family: Cormorant;">HTML/CSS/JavaScript</h2>
+            <ol style="font-family: Cormorant;">
+                <li>
+                    Creating a "Plant Thingy" website:
+                    <ul>
+                        <li>Home webpage with website information, features, and authors.</li>
+                        <li>Statistics webpage that takes temperature and humidity data from Raspberry Pi placed near a pot and sends it to the user.</li>
+                        <li>Plant-pedia webpage that works as a Wikipedia for the client.</li>
+                    </ul>
+                </li>
+                <li>
+                    Personal Portfolio Webpage
+                </li>
+            </ol>
+        </section>
+        
         
     </section>
 
-    <section id="education">
-        <h2>𝙴𝚍𝚞𝚌𝚊𝚝𝚒𝚘𝚗</h2>
-        <p><strong><H3>𝙸𝚘𝚠𝚊 𝚂𝚝𝚊𝚝𝚎 𝚄𝚗𝚒𝚟𝚎𝚛𝚜𝚒𝚝𝚢</H3></strong></p>
-        <div class="left">
-            𝙱𝚊𝚌𝚑𝚎𝚕𝚘𝚛 𝚘𝚏 𝚂𝚌𝚒𝚎𝚗𝚌𝚎, 𝙲𝚘𝚖𝚙𝚞𝚝𝚎𝚛 𝚂𝚌𝚒𝚎𝚗𝚌𝚎 (𝙶𝙿𝙰: 𝟹.𝟹𝟶)
-        </div>
-        <div class="right">
-            𝙰𝚗𝚝𝚒𝚌𝚒𝚙𝚊𝚝𝚎𝚍: 𝙼𝚊𝚢 𝟸𝟶𝟸𝟼
-        </div>
-        <br>
-        <p>𝙰𝚖𝚎𝚜, 𝙸𝚘𝚠𝚊</p>
-
-
-    </section>
-
-    <section id="coursework">
-        <h2>𝙲𝚘𝚞𝚛𝚜𝚎𝚠𝚘𝚛𝚔 𝚃𝚊𝚔𝚎𝚗</h2>
-        <ul>
-            <li>𝙿𝚛𝚘𝚐𝚛𝚊𝚖𝚖𝚒𝚗𝚐 𝙸𝚗𝚝𝚛𝚘𝚍𝚞𝚌𝚝𝚒𝚘𝚗: 𝙿𝚢𝚝𝚑𝚘𝚗 𝙲𝙾𝙼 𝚂 𝟷𝟸𝟽</li>
-            <li>𝙾𝚋𝚓𝚎𝚌𝚝-𝙾𝚛𝚒𝚎𝚗𝚝𝚎𝚍 𝙿𝚛𝚘𝚐𝚛𝚊𝚖𝚖𝚒𝚗𝚐: 𝙲𝙾𝙼 𝚂 𝟸𝟸𝟽</li>
-            <li>𝙳𝚊𝚝𝚊 𝚂𝚝𝚛𝚞𝚌𝚝𝚞𝚛𝚎𝚜: 𝙲𝙾𝙼 𝚂 𝟸𝟸𝟾</li>
-            <li>𝙳𝚒𝚜𝚌𝚛𝚎𝚝𝚎 𝙲𝚘𝚖𝚙𝚞𝚝𝚊𝚝𝚒𝚘𝚗𝚊𝚕 𝚂𝚝𝚛𝚞𝚌𝚝𝚞𝚛𝚎𝚜: 𝙲𝙾𝙼 𝚂 𝟸𝟹𝟶</li>
-            <li>𝙳𝚎𝚜𝚒𝚐𝚗 𝚊𝚗𝚍 𝙰𝚗𝚊𝚕𝚢𝚜𝚒𝚜 𝚘𝚏 𝙰𝚕𝚐𝚘𝚛𝚒𝚝𝚑𝚖𝚜: 𝙲𝙾𝙼 𝚂 𝟹𝟷𝟿</li>
-            <li>𝚄𝚜𝚎𝚛 𝙸𝚗𝚝𝚎𝚛𝚏𝚊𝚌𝚎: 𝙲𝙾𝙼 𝚂 𝟹𝟷𝟷</li>
-            <li>𝙳𝚊𝚝𝚊𝚋𝚊𝚜𝚎 𝙼𝚊𝚗𝚊𝚐𝚎𝚖𝚎𝚗𝚝: 𝙲𝙾𝙼 𝚂 𝟹𝟼𝟹</li>
+   
+    
+    <section id="Leadership" class="fade-in">
+        <h2 style="font-family: Cormorant;">LEADERSHIP & INVOLVEMENT</h2>
+        <ul style="list-style-type: none; padding: 0;">
+            <li>
+                ISSO Orientation Leader - Aug 2023 & Jan 2024
+                <ul>
+                    <li>Organized events such as welcome receptions, field trips, and informational meetings for new international students.</li>
+                </ul>
+            </li>
+            <li>
+                DIS Leader (Destination Iowa State) - Aug 2023
+                <ul>
+                    <li>Prepared and presented information about student services, academic programs, campus resources, and other topics related to student life to the incoming cyclones.</li>
+                </ul>
+            </li>
         </ul>
     </section>
-
-    <section id="Projects">
-        <h2>𝙴𝚍𝚞𝚌𝚊𝚝𝚒𝚘𝚗</h2>
-        <p><strong><H3>𝙸𝚘𝚠𝚊 𝚂𝚝𝚊𝚝𝚎 𝚄𝚗𝚒𝚟𝚎𝚛𝚜𝚒𝚝𝚢</H3></strong></p>
-        <div class="left">
-            𝙱𝚊𝚌𝚑𝚎𝚕𝚘𝚛 𝚘𝚏 𝚂𝚌𝚒𝚎𝚗𝚌𝚎, 𝙲𝚘𝚖𝚙𝚞𝚝𝚎𝚛 𝚂𝚌𝚒𝚎𝚗𝚌𝚎 (𝙶𝙿𝙰: 𝟹.𝟹𝟶)
-        </div>
-        <div class="right">
-            𝙰𝚗𝚝𝚒𝚌𝚒𝚙𝚊𝚝𝚎𝚍: 𝙼𝚊𝚢 𝟸𝟶𝟸𝟼
-        </div>
-        <br>
-        <p>𝙰𝚖𝚎𝚜, 𝙸𝚘𝚠𝚊</p>
-
+    
+    <section id="skills" class="fade-in">
+        <h2 style="font-family: Cormorant;">SKILLS</h2>
+        <ul style="list-style-type: none; padding: 0;">
+            <li>
+                Software:
+                <ul>
+                    <li>Blender, VS Code, Eclipse, IntelliJ IDEA, MySQLWorkbench, SynfigStudio, Microsoft Office, Google Workspace</li>
+                </ul>
+            </li>
+            <li>
+                Programming Languages:
+                <ul>
+                    <li>Java, Python, HTML, CSS, JavaScript, LaTeX, MySQL</li>
+                </ul>
+            </li>
+            <li>
+                Operating System:
+                <ul>
+                    <li>Linux, MacOS, Windows</li>
+                </ul>
+            </li>
+            <li>
+                Soft Skills:
+                <ul>
+                    <li>Leadership, Teamwork, Technical communication and reporting, Problem Solving, Adaptability, Willingness to learn</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    
+   
+    <section id="experience" class="fade-in">
+        <h2 style="font-family: Cormorant;">EXPERIENCE</h2>
+    
+        <!-- ISU, Agronomy's IT Department -->
+        <article>
+            <h3>ISU, Agronomy's IT Department</h3>
+            <p>Feb 2023 – Present</p>
+            <p>Student Support Technician | Ames, Iowa</p>
+            <p>
+                In my capacity as a Student Support Technician at ISU, Agronomy's IT Department, I excel in diagnosing system errors,
+                troubleshooting technical issues, and efficiently resolving problems. My responsibilities extend to installation,
+                configuration, and maintenance of both hardware and software components, showcasing competence in providing comprehensive
+                technical support to diverse users. Beyond technical tasks, I actively contribute to team collaboration and coordination,
+                participating in the implementation and continuous improvement of IT systems and supporting documentation.
+                Serving as a communicative liaison, I effectively communicate technical concepts and resolutions to end-users, fostering
+                a comprehensive understanding of IT systems and encouraging user empowerment.
+            </p>
+        </article>
+    
+        <!-- Mastermind Institute -->
+        <article>
+            <h3>Mastermind Institute</h3>
+            <p>Apr 2022 – Jun 2022</p>
+            <p>Teaching Assistant | Ahmedabad, Gujarat</p>
+            <p>
+                As a Teaching Assistant at Mastermind Institute in Ahmedabad, Gujarat, I played a vital role in fostering the academic
+                growth of high school first-year students and sophomores. My responsibilities included instructing students in mathematics
+                and science, covering a wide range of new concepts. I took a proactive approach in creating an engaging learning
+                environment by developing test papers and crafting informative PowerPoint presentations using Microsoft Office. By
+                leveraging my passion for education and strong communication skills, I aimed to facilitate an effective and enriching
+                learning experience for the students, contributing to their academic success during this period.
+            </p>
+        </article>
 
     </section>
-
-    <section id="experience">
-        <h2>𝙴𝚡𝚙𝚎𝚛𝚒𝚎𝚗𝚌𝚎</h2>
-        <p><strong><h3>𝙸𝚂𝚄, 𝙰𝚐𝚛𝚘𝚗𝚘𝚖𝚢'𝚜 𝙸𝚃 𝙳𝚎𝚙𝚊𝚛𝚝𝚖𝚎𝚗𝚝</h3></strong></p>
-        <div class = "left">𝚂𝚝𝚞𝚍𝚎𝚗𝚝 𝚂𝚞𝚙𝚙𝚘𝚛𝚝 𝚃𝚎𝚌𝚑𝚗𝚒𝚌𝚒𝚊𝚗, 𝙰𝚖𝚎𝚜, 𝙸𝚘𝚠𝚊</div>
-        <div class = "right">𝙵𝚎𝚋 𝟸𝟶𝟸𝟹 – 𝙿𝚛𝚎𝚜𝚎𝚗𝚝</div>
-       
-        <p>
-            <br>
-            <br>
-            𝙸𝚗 𝚖𝚢 𝚌𝚊𝚙𝚊𝚌𝚒𝚝𝚢 𝚊𝚜 𝚊 𝚂𝚝𝚞𝚍𝚎𝚗𝚝 𝚂𝚞𝚙𝚙𝚘𝚛𝚝 𝚃𝚎𝚌𝚑𝚗𝚒𝚌𝚒𝚊𝚗 𝚊𝚝 𝙸𝚂𝚄, 𝙰𝚐𝚛𝚘𝚗𝚘𝚖𝚢'𝚜 𝙸𝚃 𝙳𝚎𝚙𝚊𝚛𝚝𝚖𝚎𝚗𝚝, 𝙸 𝚎𝚡𝚌𝚎𝚕𝚕𝚎𝚍 𝚒𝚗 𝚍𝚒𝚊𝚐𝚗𝚘𝚜𝚒𝚗𝚐 𝚜𝚢𝚜𝚝𝚎𝚖 𝚎𝚛𝚛𝚘𝚛𝚜, 𝚝𝚛𝚘𝚞𝚋𝚕𝚎𝚜𝚑𝚘𝚘𝚝𝚒𝚗𝚐 𝚝𝚎𝚌𝚑𝚗𝚒𝚌𝚊𝚕 𝚒𝚜𝚜𝚞𝚎𝚜, 𝚊𝚗𝚍 𝚎𝚏𝚏𝚒𝚌𝚒𝚎𝚗𝚝𝚕𝚢 
-            𝚛𝚎𝚜𝚘𝚕𝚟𝚒𝚗𝚐 𝚙𝚛𝚒𝚗𝚝𝚎𝚛-𝚛𝚎𝚕𝚊𝚝𝚎𝚍 𝚙𝚛𝚘𝚋𝚕𝚎𝚖𝚜. 𝙼𝚢 𝚛𝚎𝚜𝚙𝚘𝚗𝚜𝚒𝚋𝚒𝚕𝚒𝚝𝚒𝚎𝚜 𝚎𝚡𝚝𝚎𝚗𝚍𝚎𝚍 𝚝𝚘 𝚝𝚑𝚎 𝚒𝚗𝚜𝚝𝚊𝚕𝚕𝚊𝚝𝚒𝚘𝚗, 𝚌𝚘𝚗𝚏𝚒𝚐𝚞𝚛𝚊𝚝𝚒𝚘𝚗, 
-            𝚊𝚗𝚍 𝚖𝚊𝚒𝚗𝚝𝚎𝚗𝚊𝚗𝚌𝚎 𝚘𝚏 𝚋𝚘𝚝𝚑 𝚑𝚊𝚛𝚍𝚠𝚊𝚛𝚎 𝚊𝚗𝚍 𝚜𝚘𝚏𝚝𝚠𝚊𝚛𝚎 𝚌𝚘𝚖𝚙𝚘𝚗𝚎𝚗𝚝𝚜, 𝚜𝚑𝚘𝚠𝚌𝚊𝚜𝚒𝚗𝚐 𝚊 𝚌𝚘𝚖𝚙𝚛𝚎𝚑𝚎𝚗𝚜𝚒𝚟𝚎 𝚞𝚗𝚍𝚎𝚛𝚜𝚝𝚊𝚗𝚍𝚒𝚗𝚐 𝚘𝚏 𝙸𝚃 𝚜𝚢𝚜𝚝𝚎𝚖𝚜. 
-            𝙱𝚎𝚢𝚘𝚗𝚍 𝚝𝚎𝚌𝚑𝚗𝚒𝚌𝚊𝚕 𝚝𝚊𝚜𝚔𝚜, 𝙸 𝚖𝚎𝚝𝚒𝚌𝚞𝚕𝚘𝚞𝚜𝚕𝚢 𝚍𝚘𝚌𝚞𝚖𝚎𝚗𝚝𝚎𝚍 𝚌𝚞𝚜𝚝𝚘𝚖𝚎𝚛 𝚜𝚞𝚙𝚙𝚘𝚛𝚝 𝚒𝚗𝚌𝚒𝚍𝚎𝚗𝚝𝚜 𝚊𝚗𝚍 𝚛𝚎𝚜𝚘𝚕𝚞𝚝𝚒𝚘𝚗𝚜, 𝚌𝚘𝚗𝚝𝚛𝚒𝚋𝚞𝚝𝚒𝚗𝚐 𝚝𝚘 𝚝𝚛𝚊𝚗𝚜𝚙𝚊𝚛𝚎𝚗𝚝 
-            𝚌𝚘𝚖𝚖𝚞𝚗𝚒𝚌𝚊𝚝𝚒𝚘𝚗 𝚊𝚗𝚍 𝚌𝚘𝚗𝚝𝚒𝚗𝚞𝚘𝚞𝚜 𝚙𝚛𝚘𝚌𝚎𝚜𝚜 𝚒𝚖𝚙𝚛𝚘𝚟𝚎𝚖𝚎𝚗𝚝. 𝙿𝚛𝚘𝚏𝚒𝚌𝚒𝚎𝚗𝚝 𝚒𝚗 𝚂𝚎𝚛𝚟𝚒𝚌𝚎𝙽𝚘𝚠 𝚏𝚘𝚛 𝙸𝚃 𝚜𝚎𝚛𝚟𝚒𝚌𝚎 𝚖𝚊𝚗𝚊𝚐𝚎𝚖𝚎𝚗𝚝, 𝙸 𝚏𝚞𝚛𝚝𝚑𝚎𝚛 𝚍𝚎𝚖𝚘𝚗𝚜𝚝𝚛𝚊𝚝𝚎𝚍 
-            𝚎𝚡𝚙𝚎𝚛𝚝𝚒𝚜𝚎 𝚒𝚗 𝚖𝚊𝚗𝚊𝚐𝚒𝚗𝚐 𝚞𝚜𝚎𝚛 𝚊𝚌𝚌𝚘𝚞𝚗𝚝𝚜 𝚊𝚗𝚍 𝚜𝚢𝚜𝚝𝚎𝚖 𝚌𝚘𝚗𝚏𝚒𝚐𝚞𝚛𝚊𝚝𝚒𝚘𝚗𝚜 𝚠𝚒𝚝𝚑𝚒𝚗 𝚝𝚑𝚎 𝚌𝚘𝚖𝚙𝚕𝚎𝚡𝚒𝚝𝚒𝚎𝚜 𝚘𝚏 𝙰𝚌𝚝𝚒𝚟𝚎 𝙳𝚒𝚛𝚎𝚌𝚝𝚘𝚛𝚢 𝚊𝚗𝚍 𝙹𝚊𝚖𝚏 𝚎𝚗𝚟𝚒𝚛𝚘𝚗𝚖𝚎𝚗𝚝𝚜, 
-            𝚞𝚗𝚍𝚎𝚛𝚜𝚌𝚘𝚛𝚒𝚗𝚐 𝚋𝚘𝚝𝚑 𝚖𝚢 𝚝𝚎𝚌𝚑𝚗𝚒𝚌𝚊𝚕 𝚙𝚛𝚘𝚏𝚒𝚌𝚒𝚎𝚗𝚌𝚢 𝚊𝚗𝚍 𝚊𝚍𝚊𝚙𝚝𝚊𝚋𝚒𝚕𝚒𝚝𝚢 𝚒𝚗 𝚍𝚒𝚟𝚎𝚛𝚜𝚎 𝙸𝚃 𝚕𝚊𝚗𝚍𝚜𝚌𝚊𝚙𝚎𝚜.
-        </p>
-    </section>
-
-    <!-- Add other sections for projects, leadership, skills, etc. -->
 
     <section id="contact">
-        <h2>𝙲𝚘𝚗𝚝𝚊𝚌𝚝 𝙸𝚗𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗</h2>
+        <h2>Contact information</h2>
         <ul style=" list-style-type: none">
-            <li>𝙴𝚖𝚊𝚒𝚕: <a href="dhvanimm@iastate.edu">𝚍𝚑𝚟𝚊𝚗𝚒𝚖𝚖@𝚒𝚊𝚜𝚝𝚊𝚝𝚎.𝚎𝚍𝚞</a></li>
+            <li>Email: <a href="dhvanimm@iastate.edu">dhvanimm@iastate.edu</a></li>
         </ul>
     </section>
 
     <footer>
         &copy; 𝟸𝟶𝟸𝟺  𝙳𝙷𝚅𝙰𝙽𝙸 𝙼𝙸𝚃𝙷𝚄𝙽𝙺𝚄𝙼𝙰𝚁 𝙼𝙸𝚂𝚃𝚁𝚈
     </footer>
-
+    <script src="i.js"></script>
 </body>
 
 </html>
