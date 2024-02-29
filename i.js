@@ -33,6 +33,6 @@ const emailLink = document.getElementById('emailLink');
     });
 
     phoneLink.addEventListener('click', function() {
-      const phoneNumber = '1234567890';
+      const phoneNumber = '6124176657';
       window.location.href = 'tel:' + phoneNumber;
     });
