@@ -24,3 +24,15 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+const emailLink = document.getElementById('emailLink');
+    const phoneLink = document.getElementById('phoneLink');
+
+    emailLink.addEventListener('click', function() {
+      const emailAddress = 'dhvanimm@iastate.edu';
+      window.location.href = 'mailto:' + emailAddress;
+    });
+
+    phoneLink.addEventListener('click', function() {
+      const phoneNumber = '1234567890';
+      window.location.href = 'tel:' + phoneNumber;
+    });
