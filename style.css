@@ -14,10 +14,6 @@ img {
     height: auto;
 }
 
-p {
-    font-family: Cormorant;
-}
-
 @media only screen and (max-width: 600px) {
     #Profile {
         flex-direction: column;
@@ -28,83 +24,102 @@ p {
         margin-bottom: 10px; 
     }
 }
-    body {
-        font-family:'Cormorant';
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-        color: #333;
+
+body {
+    font-family:'Cormorant';
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
     }
 
-    header {
-        background-color: #518355;
-        color: white;
-        padding: 2em;
-        text-align: center;
-        position: relative;
-        top: 0;
-        width: 100%;
-        z-index: 100;
+header {
+    background-color: #518355;
+    color: white;
+    padding: 2em;
+    text-align: center;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
-    section {
-        margin: 2em auto;
-        padding: 1em;
-        background-color: white;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        padding-left: 2em;
-        padding-right: 2em;
-    }
+section {
+    margin: 2em auto;
+    padding: 1em;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-left: 2em;
+    padding-right: 2em;
+}
 
-    h1 {
-        color: #dcf2db;
-        font-family: monospace;
-    }
+h1 {color: #dcf2db; font-family:'Cormorant'}
+H2{color: #518355}
+H3{color: #518355}
 
-    H2{
-        color: #518355
-    }
-
-    footer {
-        text-align: center;
-        padding: 1em;
-        background-color: #518355;
-        color: #dcf2db;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #518355;
+    color: #dcf2db;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
     
-    p{
-        text-align: justify;
+p{text-align: justify;}
+
+nav{width: 100%;}
+
+nav ul {
+    display: flex;
+    gap: 3px; /* Adjust the gap as needed */
+    justify-content: center; /* Align items at the center horizontally */
+    list-style: none;
+    color: #dcf2db;
+    }
+        
+nav a {
+    text-decoration: none;
+    color: #dcf2db;
+    padding: 5px;
+    }
+        
+nav a:hover {
+    background-color: #555;}
+        
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
     }
 
-    nav{
-        width: 100%;
+.fade-in.visible {
+    opacity: 1;
+    } 
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-content {
+    flex: 1; 
+    margin-right: 20px;
+}
+
+.project-image {
+    max-width: auto; 
+}
+
+@media only screen and (max-width: 600px) {
+    .project {
+        flex-direction: column; 
     }
 
-    nav ul {
-        display: flex;
-        gap: 3px; /* Adjust the gap as needed */
-        justify-content: center; /* Align items at the center horizontally */
-        list-style: none;
-        color: #dcf2db;
-        }
-          
-    nav a {
-        text-decoration: none;
-        color: #dcf2db;
-        padding: 5px;
-        }
-          
-    nav a:hover {
-        background-color: #555;}
-          
-  
-    .fade-in {
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-        }
-  .fade-in.visible {
-        opacity: 1;
-        } 
+    .project-content {
+        margin-right: 0; 
+    }
+}
+        
